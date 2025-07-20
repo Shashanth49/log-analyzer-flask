@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Log Analyzer</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        .dataframe { border-collapse: collapse; width: 100%; }
+        .dataframe th, .dataframe td { border: 1px solid #ddd; padding: 8px; }
+        .dataframe th { background-color: #f2f2f2; }
+    </style>
+  </head>
+  <body>
+    <h1>🚨 Log Analyzer - Flask Version</h1>
+    <h2>🔍 Parsed Log Table</h2>
+    {{ tables[0]|safe }}
+
+    <h2>⚠️ Suspicious IPs (More than 3 Fails)</h2>
+    <ul>
+    {% for ip, count in suspicious.items() if count > 3 %}
+        <li>{{ ip }} ({{ count }} failed attempts)</li>
+    {% else %}
+        <li>No suspicious IPs found.</li>
+    {% endfor %}
+    </ul>
+  </body>
+</html>
