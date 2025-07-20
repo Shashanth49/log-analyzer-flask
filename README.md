@@ -14,7 +14,7 @@ Sample `auth.log` included under `sample_logs`.
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/yourusername/log-analyzer-flask.git
+git clone https://github.com/Shashanth49/log-analyzer-flask.git
 cd log-analyzer-flask
 pip install -r requirements.txt
 python app.py
@@ -26,4 +26,4 @@ python app.py
 - REST API for logs upload and analysis
 
 ## 👨‍💻 Developed By
-Shashanth David – [LinkedIn](https://linkedin.com/in/your-profile)
+Shashanth Rao – [LinkedIn](https://www.linkedin.com/in/pasham-shashanth-rao-1209b8298)
